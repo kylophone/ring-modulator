@@ -10,7 +10,7 @@ gcc ring.c -o ./ring
 ./ring input.raw 1000
 ```
 ### Input File
-To keep the code as simple, you will need to first convert your input file to a 48kHz/32-bit raw PCM. This is easy to do with SoX like this:
+To keep the code simple, you will need to convert your input file to a 48kHz/32-bit raw PCM. This is easy to do with SoX like this:
 ```
 sox input.mp3 -c 1 -r 48000 -b 32 -e float -t raw input.raw
 ```
